@@ -1,0 +1,183 @@
+.all-product {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+.all-product .container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 30px;
+  padding: 80px 0;
+}
+
+/*
+-----------------------------------------------------------------------------
+                                PRODUCT FILTER
+-----------------------------------------------------------------------------
+*/
+
+.all-product .filter {
+  width: 100%;
+  margin-top: 50px;
+  z-index: 1000;
+}
+.all-product .filter .category {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+.all-product .filter .sub-heading {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.all-product .filter p {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.all-product .filter .price input {
+  width: 100%;
+}
+.all-product .filter .color-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+}
+.all-product .filter .filter-color {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.all-product .filter p {
+  cursor: pointer;
+}
+.all-product .filter .rating p {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom: 10px;
+}
+.all-product .filter .rating i {
+  color: #ffa55c;
+  font-size: 16px;
+}
+/*
+-----------------------------------------------------------------------------
+                                PRODUCT UPPER STYLING
+-----------------------------------------------------------------------------
+*/
+.all-product .product-upper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.all-product .product-upper h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.all-product .product-upper .sort {
+  position: relative;
+  cursor: pointer;
+}
+.all-product .product-upper .sort span {
+  font-size: 12px;
+  color: #ffa55c;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.all-product .product-upper .sort .list {
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  padding: 20px;
+  width: 90px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.all-product .sort .list p:nth-child(1) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  padding-bottom: 7px;
+}
+.all-product .sort p:nth-child(2) {
+  padding-top: 5px;
+}
+
+/*
+-----------------------------------------------------------------------------
+                                PRODUCT APPLIED FILTER
+-----------------------------------------------------------------------------
+*/
+.all-product .product-data .apply-filter-slice {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+.all-product .apply-filter-slice div {
+  padding: 6px 15px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.all-product .apply-filter-slice div .fa-star {
+  color: #ffa55c;
+  margin-right: 5px;
+}
+.all-product .apply-filter-slice span {
+  color: #ffa55c;
+}
+.all-product .apply-filter-slice button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-top: 5px;
+}
+.all-product .apply-filter-slice button i {
+  color: #dddddd;
+  margin-left: 8px;
+  font-size: 17px;
+  transition: 0.1s;
+}
+.all-product .apply-filter-slice button i:hover {
+  color: rgba(134, 134, 134, 0.801);
+}
+.all-product .apply-filter-slice .color-applied-filter{
+  width: 50px;
+  border: none;
+}
+/*
+-----------------------------------------------------------------------------
+                                PRODUCT CARDS
+-----------------------------------------------------------------------------
+*/
+
+.all-product .products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}

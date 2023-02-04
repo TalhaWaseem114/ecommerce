@@ -1,0 +1,106 @@
+.favorite-wrapper {
+  position: absolute;
+  top: 70px;
+  right: 5px;
+  width: calc(100% - 72px);
+  max-width: 430px;
+  padding: 30px;
+  padding-left: 50px;
+  box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 16%);
+
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(248, 249, 250, 0.9);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.favorite-wrapper .heading {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-left: -15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.favorite-wrapper .favorite-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.favorite-wrapper .favorite-flex .favorite-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 12px;
+}
+.favorite-wrapper .favorite-item .img-wrapper {
+  background-color: #fff;
+  height: 95px;
+  width: 95px;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+}
+.favorite-wrapper .favorite-item .img-fit-width-fav{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.favorite-wrapper .favorite-item .delete {
+  position: absolute;
+  left: -35px;
+  top: 30px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 6px 8px;
+  margin: auto;
+  background: transparent;
+}
+.favorite-wrapper .favorite-item .delete i {
+  font-size: 12px;
+}
+
+.favorite-wrapper .favorite-item img {
+  height: 100%;
+  margin: auto;
+}
+.favorite-wrapper .favorite-flex .favorite-item .content {
+  display: flex;
+  flex-direction: column;
+}
+.favorite-wrapper .favorite-flex .favorite-item a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.favorite-wrapper .favorite-flex .price {
+  font-weight: 500;
+}
+.favorite-wrapper .favorite-flex .favorite-item a:hover {
+  color: #ffa55cd2;
+}
+.favorite-wrapper .cart-btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: #ffa55cd2;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: auto;
+  transition: .3s;
+}
+.favorite-wrapper .cart-btn:hover{
+  background-color: #ffa55c;
+}

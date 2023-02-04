@@ -1,0 +1,159 @@
+.App header {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  padding: 1rem 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2001 !important;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+.App header .brand {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Qwitcher Grypen", cursive;
+  color: #000;
+}
+.App header .mid-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.App header .mid-header p {
+  cursor: pointer;
+  color: #383838;
+  font-weight: 500;
+  font-size: 14px;
+}
+.App header .header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.App header .header-right .favorite-btn,
+.App header .header-right .search-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.App header .header-right .favorite-btn img,
+.App header .header-right .search-btn img {
+  width: 25px;
+}
+.App .cart-link {
+  position: relative;
+}
+.App .fa-user {
+  font-size: 20px;
+  color: rgb(119, 119, 119);
+}
+.App .cart-icon {
+  width: 25px;
+}
+.App .cart-link span {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  text-align: center;
+  color: #ffffff;
+  background: #ffa45c;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  font-size: 12px;
+  border: 3px solid #ffffff;
+  padding: 1px;
+}
+.App header .user {
+  color: rgb(119, 119, 119);
+  font-weight: 600;
+  position: relative;
+  margin-left: 6px;
+}
+.App header .name {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ffa55cd2;
+  box-shadow: 0 0 0 3px #ffa55c6b;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding-top: 5px;
+  transition: 0.3s;
+}
+.App header .name:hover {
+  box-shadow: 0 0 0 13px #b77d3126;
+}
+.App header .user .list {
+  width: 120px;
+  position: absolute;
+  top: 40px;
+  left: -100px;
+  display: flex;
+  flex-direction: column;
+  color: #5c5c5c;
+  padding: 20px;
+  z-index: 100000;
+
+  backdrop-filter: blur(16px) saturate(180%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(229, 229, 229, 0.8) 100%
+  );
+  border-radius: 10px;
+  border: 1px solid rgba(209, 213, 219, 0.4);
+}
+.App header .user .dashboard-btn {
+  background-color: #ffa45c;
+  padding: 4px 10px;
+  margin-bottom: 4px;
+  color: #f4f4f4 !important;
+  border-radius: 3px;
+}
+.App header .user .list p {
+  cursor: pointer;
+  font-weight: 400;
+}
+.App header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.App header .user .list a {
+  color: #5c5c5c;
+  font-weight: 500;
+}
+.App header .nav-link {
+  border: 1px solid rgba(255, 255, 255, 0.547);
+  border-radius: 5px;
+  font-weight: 100;
+  margin-top: -20px;
+  transform: translateY(10px);
+}
+/*
+----------------------------------------------------------------
+                          MEDIA QUERY
+----------------------------------------------------------------
+*/
+@media screen and (max-width: 780px) {
+  .App header .mid-header {
+   display: none;
+  }
+}

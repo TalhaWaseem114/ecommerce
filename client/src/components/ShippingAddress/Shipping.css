@@ -1,0 +1,129 @@
+.shipping {
+  width: 100%;
+  min-height: calc(100vh - 135px);
+  display: flex;
+  flex-direction: column;
+}
+.shipping .address-wrapper {
+  width: 100%;
+  margin: 80px auto;
+}
+.shipping form {
+  width: 95%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+}
+.shipping form .inputs-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.shipping form .inputs-container label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.shipping form .inputs-container .input-slice {
+  display: flex;
+  flex-direction: column;
+}
+.shipping form input,
+.shipping form textarea {
+  padding: 18px 20px;
+  /* border-radius: 2px; */
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.shipping form textarea {
+  height: 100px;
+  resize: vertical;
+}
+.shipping form input::placeholder,
+.shipping form textarea::placeholder {
+  color: #9c9c9ce1;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.shipping form input:focus,
+.shipping form textarea:focus {
+  outline: 1px solid #ffa55c;
+  border: 1px solid rgba(187, 187, 187, 0.567);
+}
+.shipping form input,
+.shipping form textarea {
+  color: #444444;
+  font-size: 17px;
+}
+.shipping form textarea {
+  grid-column: 1/-1;
+}
+.shipping form .info-card {
+  width: 450px;
+  height: fit-content;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 28px;
+  box-sizing: border-box;
+}
+.shipping form .info-card .shipping-charges {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.shipping form .info-card .shipping-charges h3 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  color: #282828;
+}
+.shipping form .info-card .shipping-charges p {
+  margin-left: 8px;
+  margin-bottom: 16px;
+  color: #808080;
+  font-size: 15px;
+}
+.shipping form .info-card button {
+  width: 100%;
+  padding: 17px;
+  background-color: #ffa55c;
+  border: 1px solid #ffa55c;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  border-radius: 35px;
+  transition: 0.3s;
+}
+.shipping form .info-card button:hover {
+  background-color: #ffff;
+  color: #ffa55c;
+  box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+}
+.shipping form .info-card a {
+  color: #282828;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 17px;
+  box-sizing: border-box;
+  background-color: transparent;
+  letter-spacing: 0.5px;
+  border: 1px solid #282828;
+  border-radius: 35px;
+  transition: 0.3s;
+}
+.shipping form .info-card a:hover {
+  box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+}

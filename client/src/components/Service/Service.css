@@ -1,0 +1,50 @@
+/*
+--------------------------------------------------------------------------
+                                  SERVICE CARDS
+--------------------------------------------------------------------------
+*/
+.service-wrapper {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+.bgLight{
+  background-color: #fff;
+  padding: 0;
+}
+.service-wrapper .title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.service-wrapper .service-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+.service-wrapper .service-grid .service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.service-wrapper .service-grid .service-card-middle {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.service-wrapper .service-card img {
+  width: 50px !important;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.service-wrapper .service-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.service-wrapper .service-card p {
+  text-align: center;
+  color: #808080;
+  line-height: 27px;
+}

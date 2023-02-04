@@ -1,0 +1,10 @@
+.rating i{
+  z-index: 100!important;
+}
+.rating span{
+  color: #ffc000;
+}
+.rating .text{
+margin-left: 5px;
+font-size: 14px;
+}

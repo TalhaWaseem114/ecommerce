@@ -1,0 +1,42 @@
+.completed .container {
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.completed .container .fa-circle-check {
+  font-size: 75px;
+  color: #ffa55c;
+  margin-bottom: 10px;
+}
+.completed .container h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.completed .container p {
+  width: 730px;
+  margin-bottom: 25px;
+  color: #808080;
+  line-height: 27px;
+}
+.completed .container a {
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #ffa45c;
+  color: #ffa55c;
+  padding: 16px 48px;
+  border-radius: 35px;
+  font-size: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 16px 0 0;
+  box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+  transition: 300ms;
+}
+.completed .container a:hover {
+  background-color: #ffa45c;
+  color: #fff;
+}
